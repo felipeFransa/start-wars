@@ -9,19 +9,18 @@ export const Navbar: React.FC = () => {
   }
 
   return (
-    <nav className="bg-black">
+    <nav className="bg-black mb-1">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex-shrink-0">
+
+        <div className="flex flex-col sm:flex-row items-center sm:justify-between h-16">
+          
+          <div className="hidden sm:flex">
             <a href="#" className="flex items-center">
               <img className="h-8 w-14" src={LogoStarWars.src} alt="Logo" />
-              {/* <span className="text-white ml-2">Meu Site</span> */}
             </a>
           </div>
 
-          {/* Barra de Pesquisa */}
-          <div className="flex-shrink-0">
+          <div className="flex w-full h-full justify-center sm:justify-end items-center">
             <form action="#" method="POST">
               <div className="flex">
                 <input type="text" placeholder="Pesquisar" className="px-2 py-1.5 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
@@ -29,6 +28,7 @@ export const Navbar: React.FC = () => {
               </div>
             </form>
           </div>
+
         </div>
       </div>
     </nav>

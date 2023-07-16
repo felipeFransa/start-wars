@@ -4,9 +4,8 @@ import { Main } from "@/app/components/Main";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="container mx-auto">
       <Navbar />
-      <Button />
       <Main />
     </div>
   )
