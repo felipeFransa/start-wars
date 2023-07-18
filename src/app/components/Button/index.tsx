@@ -1,15 +1,15 @@
-"use client"
 
-import React from "react";
 
-export const Button = () => {
+type Props = {
+    label: string;
+    onClick: ()=> void;
+}
 
-    const handleclick = () => {
-        alert("Clicou!")
-    }
+export const Button = ({ label, onClick }: Props) => {
+
     return (
-        <div className="w-full flex justify-end items-center">
-            <button onClick={handleclick} className="p-3 bg-blue-700 text-white rounded-md">Clique aqui</button>
+        <div className="w-full flex justify-center items-center">
+            <button onClick={onClick} className="p-3 bg-blue-700 text-white rounded-md">{label}</button>
         </div>
     )
 } 
